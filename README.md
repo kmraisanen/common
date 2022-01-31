@@ -1,2 +1,2 @@
 # common
-Common latex styles, packages, fonts
+Common latex styles, packages, fonts for fiction.
