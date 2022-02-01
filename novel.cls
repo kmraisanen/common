@@ -316,18 +316,21 @@ contents={%
 \makeatletter
 \renewcommand\maketitle{
 	\pagestyle{empty}%
-	\newgeometry{left=9mm,right=0mm,bottom=0mm,top=9mm}%
+	\newgeometry{left=7mm,right=0mm,bottom=0mm,top=9mm}%
 	\pagecolor{\themecoverbg}%
-% 	\begin{minipage}[t]{40mm}\raggedright%
-% 	    \includegraphics[width=10mm,height=10mm]{logo}%
-% 	\end{minipage}
-	\noindent
-	\hspace*{40mm}
-	\begin{minipage}[t]{80mm}\raggedright\noindent%
-        \hspace*{-.5em}{\fontauthor\textcolor{\themecoverauthor}{\@author}}\nlno
-        \hspace*{-.5em}{\fonttitle\textcolor{\themecovertitle}{\@title}}\nlno
-        \hspace*{-.5em}{\fontsubtitle\textcolor{\themecoversubtitle}{\@subtitle}}
-	\end{minipage}
+	\noindent%
+	\begin{minipage}[t][50mm]{130mm}\noindent
+     	\begin{minipage}[c]{30mm}\raggedright\noindent%
+     	    \includegraphics[width=30mm,height=10mm]{colophon}%
+     	\end{minipage}
+     	\hspace*{10mm}
+    	\begin{minipage}[t]{80mm}\raggedright\noindent%
+            \hspace*{-.5em}{\fontauthor\textcolor{\themecoverauthor}{\@author}}\nlno
+            \hspace*{-.5em}{\fonttitle\textcolor{\themecovertitle}{\@title}}\nlno
+            \hspace*{-.5em}{\fontsubtitle\textcolor{\themecoversubtitle}{\@subtitle}}
+    	\end{minipage}
+    \end{minipage}
+
 	\clearpage
     \nopagecolor
     \pagecolor{\themepage}
